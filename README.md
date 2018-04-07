@@ -1,1 +1,1 @@
-# liri-node-app
+This application interprets linguistic commands and returns parameters relevant to those commands. This particular Language Interpretation and Recognition Interface we are using Spotify, OMDB and the Twitter API's to return search data. 
