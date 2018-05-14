@@ -7,19 +7,43 @@ USAGE
 ______________________________________________________________________________________
 
 
+LIRI uses the following npm packages
+Twitter
+Spotify
+Request
+OMDB API.
+
+
 In order to use this application you will need to clone this repo onto your local. Once you have done that, create a .env file in the following format: 
 
-# Spotify API keys
+You will need to create the following keys.js file to run this app sucessfully. Inside keys.js your file will look like this:
+console.log('this is loaded');
 
-SPOTIFY_ID=your-spotify-id
-SPOTIFY_SECRET=your-spotify-secret
+exports.twitterKeys = {
+  consumer_key: '<input here>',
+  consumer_secret: '<input here>',
+  access_token_key: '<input here>',
+  access_token_secret: '<input here>',
+}
+Get your Twitter API keys by following these steps:
 
-# Twitter API keys
+Step One: Visit https://apps.twitter.com/app/new
 
-TWITTER_CONSUMER_KEY=your-twitter-consumer-key
-TWITTER_CONSUMER_SECRET=your-twitter-consumer-secret
-TWITTER_ACCESS_TOKEN_KEY=your-access-token-key
-TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
+Step Two: Fill out the form with dummy data. Type http://google.com in the Website input. Don't fill out the Callback URL input. Then submit the form.
+Step Three: On the next screen, click the Keys and Access Tokens tab to get your consume key and secret.
+Copy and paste them where the <input here> tags are inside your keys.js file.
+Step Four: At the bottom of the page, click the Create my access token button to get your access token key and secret.
+Copy the access token key and secret displayed at the bottom of the next screen. Paste them where the <input here> tags are inside your keys.js file.
+
+LIRI's Commands
+
+* `my-tweets`
+
+* `spotify-this-song`
+
+* `movie-this`
+
+* `do-what-it-says`
 
 With the API keys relevant to each application. You will need your own keys and tokens in order to run this application. 
 
@@ -32,3 +56,4 @@ To run your latest tweets from Twitter, type in my-tweets
 To run a movie title query, type in movie-this + movieTitle
 
 Have fun! :) 
+
