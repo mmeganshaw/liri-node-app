@@ -17,7 +17,6 @@ OMDB API.
 In order to use this application you will need to clone this repo onto your local. Once you have done that, create a .env file in the following format: 
 
 You will need to create the following keys.js file to run this app sucessfully. Inside keys.js your file will look like this:
-console.log('this is loaded');
 
 exports.twitterKeys = {
   consumer_key: '<input here>',
